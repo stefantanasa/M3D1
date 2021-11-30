@@ -87,7 +87,14 @@ return theString.repeat(howMany)
 console.log(makeCopies("Stefan", 5))
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
+ex(7)
+    const searchCity = function(theString){
+      if (theString.includes("los") === true){
+        return theString
+      }
+    }
 
+    console.log(searchCity("los angeles"))
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
 
