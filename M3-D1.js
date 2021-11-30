@@ -30,7 +30,16 @@ const isTrue = function (first, second) {
 };
 console.log(isTrue(25, 24));
 
+ex(3);
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
+let aString = "Stefan Ionut";
+
+const removeChar = function (position, theString) {
+  let makeItArray = Array.from(theString);
+  makeItArray.splice(position, 1);
+  return makeItArray.join("");
+};
+console.log(removeChar(3, aString));
 
 /* 4. Create a function to find and return the largest of three given integers. */
 
