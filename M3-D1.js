@@ -81,6 +81,10 @@ console.log(inRange(10, 71))
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
 
+const makeCopies = function(theString, howMany){
+return theString.repeat(howMany)
+}
+console.log(makeCopies("Stefan", 5))
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
 
