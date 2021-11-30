@@ -1,3 +1,7 @@
+const ex = function (exercise) {
+  console.log(`----------Exercise ${exercise}----------`);
+};
+ex(1);
 /* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. */
 const sumOfTwo = function (first, second) {
   switch (first) {
@@ -9,7 +13,22 @@ const sumOfTwo = function (first, second) {
 };
 
 console.log(sumOfTwo(3, 3));
+ex(2);
 /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
+
+const isTrue = function (first, second) {
+  switch (first || second) {
+    case 50:
+      return `True 1`;
+  }
+  switch (first + second) {
+    case 50:
+      return "True 2";
+    default:
+      return first + second;
+  }
+};
+console.log(isTrue(25, 24));
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
 
