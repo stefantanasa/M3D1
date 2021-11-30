@@ -41,8 +41,28 @@ const removeChar = function (position, theString) {
 };
 console.log(removeChar(3, aString));
 
+ex(4)
 /* 4. Create a function to find and return the largest of three given integers. */
+ const largest = function(first, second, third){
+     switch (first > second){
+         case true:
+             switch (first > third){
+                 case true:
+                     return first
+                default:
+                    return third
+             }
+        case false:
+            switch (second > third){
+                case true:
+                    return second
+                case false:
+                    return third
+            }
 
+   }
+}
+console.log(largest(6,5,7))
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
 
