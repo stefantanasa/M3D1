@@ -108,14 +108,17 @@ console.log(euros.reduce((total, amount) => total + amount));
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
 ex(9);
-let newArray = [1, 2, 5, 6];
+let newArray = [2, 5, 6];
 
 let check = (array) => array.includes(1 || 3);
 console.log(check(newArray));
 
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
     Return `true` if it doesn't, `false` if it does. */
+ex(10);
 
+let check2 = (array) => !array.includes(1 || 3);
+console.log(check2(newArray));
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */
 
