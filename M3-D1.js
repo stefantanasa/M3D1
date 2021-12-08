@@ -66,37 +66,44 @@ console.log(largest(6, 5, 7));
     Return `true` if they do, return `false` if one (or both) don't. */
 ex(5);
 
-
 const inRange = function (first, second) {
-  if ((first > 40 && first<60 || second >40 && second<60) || (first > 70 && first<100 || second >70 && second<100)){
-      return "True"
-  }
-  else{
-      return "False"
+  if (
+    (first > 40 && first < 60) ||
+    (second > 40 && second < 60) ||
+    (first > 70 && first < 100) ||
+    (second > 70 && second < 100)
+  ) {
+    return "True";
+  } else {
+    return "False";
   }
 };
 
-console.log(inRange(10, 71))
+console.log(inRange(10, 71));
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
 
-const makeCopies = function(theString, howMany){
-return theString.repeat(howMany)
-}
-console.log(makeCopies("Stefan", 5))
+const makeCopies = function (theString, howMany) {
+  return theString.repeat(howMany);
+};
+console.log(makeCopies("Stefan", 5));
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
-ex(7)
-    const searchCity = function(theString){
-      if (theString.includes("los") === true){
-        return theString
-      }
-    }
+ex(7);
+const searchCity = function (theString) {
+  if (theString.includes("los") === true) {
+    return theString;
+  }
+};
 
-    console.log(searchCity("los angeles"))
+console.log(searchCity("los angeles"));
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
+
+ex(8);
+euros = [1, 2, 3, 4, 5];
+console.log(euros.reduce((total, amount) => total + amount));
 
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
