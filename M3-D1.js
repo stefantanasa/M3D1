@@ -121,7 +121,15 @@ let check2 = (array) => !array.includes(1 || 3);
 console.log(check2(newArray));
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */
+arrayOfStrings = ["this", "is", "an", "array!"];
 
+const checkLongerString = (array) => {
+  array.reduce((a  , b) => {
+    console.log(Math.max(a, b));
+  });
+};
+
+console.log(checkLongerString(arrayOfStrings));
 /* 12. Create a function to find the types of a given angle:
   1. Acute angle ⇒ between 0 and 90 degrees. Return `acute`.
     2. Right angle ⇒ 90 degree. Return `right`
